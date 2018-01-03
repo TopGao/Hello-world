@@ -22,20 +22,20 @@
     <h3>it's my word,I am neo</h3>
     <h4>hahahahahhah</h4>
     <div class="row">
-        <div class="col-md-3"  style="border: solid;border-color: gold">
-            <img src="static/img/angle.jpg" width="100%" >
+        <div class="col-md-3"  style="border: solid;border-color: gold ">
+            <img src="static/img/angle.jpg" width="100%" class="img-circle">
         </div>
 
         <div class="col-md-3" style="border: solid;border-color: gold" >
-            <img src="static/img/angle.jpg" width="100%" >
+            <img src="static/img/angle.jpg" width="100%" class="img-responsive">
         </div>
 
         <div class="col-md-3" style="border: solid;border-color: gold">
-            <img src="static/img/angle.jpg" width="100%" >
+            <img src="static/img/angle.jpg" width="100%" class="img-rounded">
         </div>
 
         <div class="col-md-3" style="border: solid;border-color: gold">
-            <img src="static/img/angle.jpg" width="100%">
+            <img src="static/img/angle.jpg" width="100%" class="img-thumbnail">
         </div>
     </div>
     <div class="row">
