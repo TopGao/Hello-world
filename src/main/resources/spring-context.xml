@@ -4,7 +4,7 @@
        xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
     <!--扫描业务层组件-->
-    <context:component-scan base-package="com.top.vip.service"></context:component-scan>
+    <!--<context:component-scan base-package="com.top.vip.service"></context:component-scan>-->
 
     <!--c3p0数据源-->
     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
@@ -25,7 +25,7 @@
     <!--使用注解来控制事物-->
     <tx:annotation-driven transaction-manager="transactionManager"></tx:annotation-driven>
 
-    <bean class="org.mybatis.spring.SqlSessionFactoryBean">
+    <!--<bean class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource"></property>
         <property name="configuration" value="classpath:mybatis-config.xml"></property>
         <property name="mapperLocations">
@@ -33,7 +33,7 @@
                 <value>classpath:mapper/*.xml</value>
             </list>
         </property>
-    </bean>
+    </bean>-->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="com\top\vip\dao"> </property>
     </bean>
